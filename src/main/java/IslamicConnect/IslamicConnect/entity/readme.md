@@ -28,3 +28,4 @@ Tag: Represents a tag or label used in tweets or other entities. It contains the
 UserFollow: Represents the follower relationship between two users. It includes the user-follow ID, follower ID, followee ID, and timestamps.
 
 Notification: Represents a notification sent to a user. It includes the notification ID, user ID, content, read status, and timestamps.
+

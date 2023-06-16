@@ -11,13 +11,13 @@ public class CalendarEvent {
     @JoinColumn(name = "calendar_id", nullable = false)
     private Calendar calendar;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name ="event_type")
     private String eventType;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="start_date_time")
     private LocalDateTime startDateTime;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="end_date_time")
     private LocalDateTime endDateTime;
 
     @Column(nullable = false)
@@ -26,10 +26,10 @@ public class CalendarEvent {
     @Column
     private String description;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="created_at")
     private LocalDateTime createdAt;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="updated_at")
     private LocalDateTime updatedAt;
 
     // Getters and setters

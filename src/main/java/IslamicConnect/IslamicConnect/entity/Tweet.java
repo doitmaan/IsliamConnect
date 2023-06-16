@@ -5,6 +5,7 @@ import javax.persistence.*;
 public class Tweet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "tweet_id")
     private Long tweetId;
 
     @ManyToOne

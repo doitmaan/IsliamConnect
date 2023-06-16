@@ -11,10 +11,10 @@ public class Calendar {
     @JoinColumn(name = "mosque_id", nullable = false)
     private Mosque mosque;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="created_at")
     private LocalDateTime createdAt;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="updated_at")
     private LocalDateTime updatedAt;
 
     // Getters and setters

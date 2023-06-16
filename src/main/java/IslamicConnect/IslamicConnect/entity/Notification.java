@@ -5,6 +5,7 @@ import javax.persistence.*;
 public class Notification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="notification_id")
     private Long notificationId;
 
     @ManyToOne
@@ -14,7 +15,7 @@ public class Notification {
     @Column(nullable = false)
     private String content;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name="read_status")
     private boolean readStatus;
 
     @Column(nullable = false)

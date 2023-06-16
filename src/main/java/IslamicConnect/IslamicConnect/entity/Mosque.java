@@ -5,6 +5,7 @@ import javax.persistence.*;
 public class Mosque {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @column(name="mosque_id")
     private Long mosqueId;
 
     @Column(nullable = false)
