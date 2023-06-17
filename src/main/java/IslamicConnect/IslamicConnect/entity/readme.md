@@ -29,4 +29,4 @@ UserFollow: Represents the follower relationship between two users. It includes 
 
 Notification: Represents a notification sent to a user. It includes the notification ID, user ID, content, read status, and timestamps.
 
-![Schema](https://github.com/doitmaan/IsliamConnect/src/main/resources/db/init/schema.png?raw=true)
+![Schema](./schema.png?raw=true)
